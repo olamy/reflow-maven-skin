@@ -23,13 +23,8 @@
   </modules>
 
   <properties>
-    <site.url>http://olamy.github.io/reflow-maven-skin</site.url>
-    <github.global.server>github</github.global.server>
-    <site.deploy.id>gh-pages</site.deploy.id>
-    <site.deploy.url />
-
-    <repositoryName>reflow-maven-skin</repositoryName>
-    <repositoryOwner>andriusvelykis</repositoryOwner>
+    <site.url>scm:git:https://github.com/olamy/reflow-maven-skin.git</site.url>
+    <site.deploy.id>github-site</site.deploy.id>
   </properties>
 
   <url>${site.url}</url>
@@ -44,6 +39,22 @@
     <system>GitHub</system>
     <url>http://github.com/olamy/reflow-maven-skin/issues</url>
   </issueManagement>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <site>
+      <id>${site.deploy.id}</id>
+      <name>Deployment through GitHub's site deployment plugin</name>
+      <url>${site.deploy.url}</url>
+    </site>
+  </distributionManagement>
 
   <licenses>
     <license>
@@ -148,6 +159,14 @@
             <target>1.6</target>
           </configuration>
         </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-scm-publish-plugin</artifactId>
+          <version>3.1.0</version>
+          <configuration>
+            <scmBranch>gh-pages</scmBranch>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
@@ -158,10 +177,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>2.7</version>
-        <configuration>
-          <anonymousConnection>scm:git:git@github.com:andriusvelykis/reflow-maven-skin.git</anonymousConnection>
-          <developerConnection>scm:git:git@github.com:andriusvelykis/reflow-maven-skin.git</developerConnection>
-        </configuration>
         <reportSets>
           <reportSet>
             <reports>
@@ -179,68 +194,7 @@
         </reportSets>
       </plugin>
 
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-changes-plugin</artifactId>
-        <version>2.9</version>
-        <configuration>
-          <includeOpenIssues>false</includeOpenIssues>
-          <columnNames>Id,Type,Summary,Fix Version</columnNames>
-        </configuration>
-        <reportSets>
-          <reportSet>
-            <!-- Empty report set as default -->
-            <reports>
-            </reports>
-          </reportSet>
-          <reportSet>
-            <id>release-notes</id>
-            <inherited>false</inherited>
-            <reports>
-              <report>github-report</report>
-            </reports>
-          </reportSet>
-        </reportSets>
-      </plugin>
     </plugins>
   </reporting>
-
-  <distributionManagement>
-    <site>
-      <id>${site.deploy.id}</id>
-      <name>Deployment through GitHub's site deployment plugin</name>
-      <url>${site.deploy.url}</url>
-    </site>
-  </distributionManagement>
-
-  <profiles>
-    <profile>
-      <id>stage</id>
-      <properties>
-        <site.deploy.url>http://github.com/andriusvelykis/reflow-maven-skin/tree/gh-pages/</site.deploy.url>
-      </properties>
-
-      <build>
-        <plugins>
-          <!-- Configure Maven site plugin to perform stage -->
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-site-plugin</artifactId>
-            <version>3.3</version>
-            <executions>
-              <execution>
-                <id>stage</id>
-                <goals>
-                  <goal>stage</goal>
-                </goals>
-                <phase>site</phase>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-
-    </profile>
-  </profiles>
 
 </project>
