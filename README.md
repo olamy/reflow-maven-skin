@@ -134,6 +134,8 @@ Fork the repository and submit pull requests.
 
 ## Author
 
+This repo is a fork from https://github.com/andriusvelykis/reflow-maven-skin 
+
 **Andrius Velykis**
 
 + https://andrius.velykis.lt

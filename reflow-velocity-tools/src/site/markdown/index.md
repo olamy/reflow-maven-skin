@@ -38,13 +38,13 @@ file:
     <plugin>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-site-plugin</artifactId>
-      <version>3.3</version>
+      <version>3.10</version>
       <dependencies>
         ...
         <dependency>
           <groupId>io.github.olamy.maven.skins</groupId>
           <artifactId>reflow-velocity-tools</artifactId>
-          <version>1.1.1</version>
+          <version>2.0.0-SNAPSHOT</version>
         </dependency>
         ...
       </dependencies>
