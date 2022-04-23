@@ -182,7 +182,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-changes-plugin</artifactId>
-        <version>2.9</version>
+        <version>2.12.1</version>
         <configuration>
           <includeOpenIssues>false</includeOpenIssues>
           <columnNames>Id,Type,Summary,Fix Version</columnNames>
