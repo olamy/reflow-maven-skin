@@ -134,7 +134,7 @@ descriptor instead of using `<custom><reflowSkin>`:
       <span class="color-highlight">Reflow</span> Maven Skin
       ]]>
     </name>
-    <href>http://andriusvelykis.github.io/reflow-maven-skin</href>
+    <href>https://olamy.github.io/reflow-maven-skin</href>
   </bannerLeft>
   ...
 </project>
@@ -143,7 +143,7 @@ descriptor instead of using `<custom><reflowSkin>`:
 Note that `<name>` element can have `CDATA` element as its contents, allowing custom HTML content
 in the banner.
 
-[mvn-site-banner]: http://maven.apache.org/plugins/maven-site-plugin/examples/sitedescriptor.html#Banner
+[mvn-site-banner]: https://maven.apache.org/plugins/maven-site-plugin/examples/sitedescriptor.html#Banner
 
 ### Brand
 
@@ -208,7 +208,7 @@ Both top and bottom navigation allows specifying regular expressions that filter
 to be displayed in the particular place. The regular expressions can match both the name of the
 menu item and its `ref` value, e.g. to match `<menu ref="modules" inherit="bottom" />`.
 
-[mvn-site-menus]: http://maven.apache.org/plugins/maven-site-plugin/examples/sitedescriptor.html#Including_Generated_Content
+[mvn-site-menus]: https://maven.apache.org/plugins/maven-site-plugin/examples/sitedescriptor.html#Including_Generated_Content
 
 
 ### Top navigation
@@ -232,7 +232,7 @@ All links from defined in [`<body><links>` element][mvn-site-links] of `site.xml
 are placed in the top navigation bar. This allows having top-level links in navigation (menus are
 always drop-down).
 
-[mvn-site-links]: http://maven.apache.org/plugins/maven-site-plugin/examples/sitedescriptor.html#Links
+[mvn-site-links]: https://maven.apache.org/plugins/maven-site-plugin/examples/sitedescriptor.html#Links
 
 
 ### Bottom navigation
@@ -298,7 +298,7 @@ setting own page title, e.g. to allow for titles such as "_My Page | My Super We
     
 -   **no `<titleTemplate>` element (default)** - default title template `%1$s - %2$s` is used
 
-[java-format]: http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html
+[java-format]: https://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html
 
 
 ## Bottom description
@@ -342,7 +342,7 @@ Reflow skin provides a `<breadcrumbs>` flag to enable/disable them:
 Note that the breadcrumbs bar must be enabled if Maven site
 [date or version are set to position **left** or **right**](#Date_and_version).
 
-[mvn-site-breadcrumbs]: http://maven.apache.org/plugins/maven-site-plugin/examples/sitedescriptor.html#Breadcrumbs
+[mvn-site-breadcrumbs]: https://maven.apache.org/plugins/maven-site-plugin/examples/sitedescriptor.html#Breadcrumbs
 
 
 ## Date and version
@@ -363,8 +363,8 @@ Reflow skin supports the following values for `position` of these components:
 
 Note that **navigation-top** position is not supported by Reflow skin.
 
-[mvn-site-date]: http://maven.apache.org/plugins/maven-site-plugin/examples/sitedescriptor.html#Publish_Date
-[mvn-site-version]: http://maven.apache.org/plugins/maven-site-plugin/examples/sitedescriptor.html#Version
+[mvn-site-date]: https://maven.apache.org/plugins/maven-site-plugin/examples/sitedescriptor.html#Publish_Date
+[mvn-site-version]: https://maven.apache.org/plugins/maven-site-plugin/examples/sitedescriptor.html#Version
 
 
 ### Override publish date

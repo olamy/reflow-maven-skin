@@ -5,7 +5,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  * 
- *   http://www.apache.org/licenses/LICENSE-2.0
+ *   https://www.apache.org/licenses/LICENSE-2.0
  * 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -43,16 +43,16 @@ import org.jsoup.parser.Tag;
 
 /**
  * An Apache Velocity tool that provides utility methods to manipulate HTML code using
- * <a href="http://jsoup.org/">jsoup</a> HTML5 parser.
+ * <a href="https://jsoup.org/">jsoup</a> HTML5 parser.
  * <p>
- * The methods utilise <a href="http://jsoup.org/cookbook/extracting-data/selector-syntax">CSS
+ * The methods utilise <a href="https://jsoup.org/cookbook/extracting-data/selector-syntax">CSS
  * selectors</a> to refer to specific elements for manipulation.
  * </p>
  * 
  * @author Andrius Velykis
  * @since 1.0
- * @see <a href="http://jsoup.org/">jsoup HTML parser</a>
- * @see <a href="http://jsoup.org/cookbook/extracting-data/selector-syntax">jsoup CSS selectors</a>
+ * @see <a href="https://jsoup.org/">jsoup HTML parser</a>
+ * @see <a href="https://jsoup.org/cookbook/extracting-data/selector-syntax">jsoup CSS selectors</a>
  */
 @DefaultKey("htmlTool")
 public class HtmlTool extends SafeConfig {
@@ -1127,7 +1127,7 @@ public class HtmlTool extends SafeConfig {
 	 *            separator for whitespace replacement
 	 * @return the slug of the given text that contains alphanumeric symbols and separator only
 	 * @since 1.0
-	 * @see <a href="http://www.codecodex.com/wiki/Generate_a_url_slug">http://www.codecodex.com/wiki/Generate_a_url_slug</a>
+	 * @see <a href="https://www.codecodex.com/wiki/Generate_a_url_slug">https://www.codecodex.com/wiki/Generate_a_url_slug</a>
 	 */
 	public static String slug(String input, String separator) {
 		String slug = adaptSlug(input, separator);

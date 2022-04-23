@@ -29,8 +29,8 @@ The skin adds a library of new Velocity tools to use in your own Maven template:
 support per-page configurations and more!
 
 
-[bootswatch]: http://bootswatch.com
-[bootstrap]: http://getbootstrap.com
+[bootswatch]: https://bootswatch.com
+[bootstrap]: https://getbootstrap.com
 [themes]: skin/themes/
 [reflow-layouts]: skin/layouts.html
 [reflow-misc]: skin/misc.html
@@ -77,7 +77,7 @@ will be rearranged automatically for readability on small screens.
 
 [Read more about layouts in the documentation &raquo;][reflow-layouts]
 
-[doxia-formats]: http://maven.apache.org/doxia/references/index.html
+[doxia-formats]: https://maven.apache.org/doxia/references/index.html
 
 
 ## Themes
@@ -94,7 +94,7 @@ to give an easy makeover for your Maven site.
 
 [How to select a theme &raquo;][themes]
 
-[bootstrap-custom]: http://twitter.github.com/bootstrap/customize.html
+[bootstrap-custom]: https://twitter.github.com/bootstrap/customize.html
 [reflow-multi]: skin/multi-module.html
 
 
@@ -148,8 +148,8 @@ Git repository on GitHub and adding some good code!
 In the end, if you _really really_ like the skin and want to support the author, I will
 be glad to [accept a small donation][donate].
 
-[mvn-site]: http://maven.apache.org/guides/mini/guide-site.html
-[apache-license]: http://www.apache.org/licenses/LICENSE-2.0
+[mvn-site]: https://maven.apache.org/guides/mini/guide-site.html
+[apache-license]: https://www.apache.org/licenses/LICENSE-2.0
 [contribute]: contribute.html
-[reflow-github]: http://github.com/andriusvelykis/reflow-maven-skin/
+[reflow-github]: https://github.com/olamy/reflow-maven-skin/
 [donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=QWKNRFZH52828

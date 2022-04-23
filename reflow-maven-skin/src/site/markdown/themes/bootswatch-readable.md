@@ -18,7 +18,7 @@ in the [`site.xml` site descriptor][site-xml] file:
 
 Find other theme options for Reflow Maven skin [here][reflow-themes].
 
-[bootswatch-theme]: http://bootswatch.com/readable/
-[bootswatch]: http://bootswatch.com
-[site-xml]: http://maven.apache.org/doxia/doxia-sitetools/doxia-decoration-model/decoration.html
+[bootswatch-theme]: https://bootswatch.com/readable/
+[bootswatch]: https://bootswatch.com
+[site-xml]: https://maven.apache.org/doxia/doxia-sitetools/doxia-decoration-model/decoration.html
 [reflow-themes]: ../config.html#Themes

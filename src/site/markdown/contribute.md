@@ -8,8 +8,8 @@ Along the way I realised that the skin is becoming general enough to be released
 the whole community can benefit. Reflow Maven skin and the associated Reflow Velocity tools can be
 used freely and are released under [Apache license][apache-license].
 
-[czt]: http://czt.sourceforge.net
-[apache-license]: http://www.apache.org/licenses/LICENSE-2.0
+[czt]: https://czt.sourceforge.net
+[apache-license]: https://www.apache.org/licenses/LICENSE-2.0
 
 
 ## Issues (bug and feature tracker)
@@ -19,8 +19,8 @@ Please report any bugs found, feature requests or other issues on
 
 When creating a new issue, try following [necolas's guidelines][issue-guidelines].
 
-[reflow-issues]: http://github.com/andriusvelykis/reflow-maven-skin/issues/
-[issue-guidelines]: http://github.com/necolas/issue-guidelines/#readme
+[reflow-issues]: https://github.com/olamy/reflow-maven-skin/issues/
+[issue-guidelines]: https://github.com/necolas/issue-guidelines/#readme
 
 
 ## Fork, patch and contribute code
@@ -31,8 +31,8 @@ updates.
 Contribute your fixes and new features back to the main codebase using
 [GitHub pull requests][github-pull-req].
 
-[reflow-github]: http://github.com/andriusvelykis/reflow-maven-skin/
-[github-pull-req]: http://help.github.com/articles/using-pull-requests
+[reflow-github]: https://github.com/olamy/reflow-maven-skin/
+[github-pull-req]: https://help.github.com/articles/using-pull-requests
 
 
 ## Support
@@ -44,7 +44,7 @@ page listing skin user sites.
 If you _really really_ like the skin and want to support the author, I will be glad to
 [accept a small donation][donate].
 
-[av-site]: http://andrius.velykis.lt
+[av-site]: https://andrius.velykis.lt
 [donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=QWKNRFZH52828
 
 
@@ -65,16 +65,16 @@ Some artwork resources from [MediaLoot][medialoot].
 
 Inspired by [Maven Fluido Skin][fluido].
 
-[bootstrap]: http://getbootstrap.com/
-[bootswatch]: http://bootswatch.com/
-[glyphicons]: http://glyphicons.com/
-[webfonts]: http://www.google.com/webfonts/
-[jquery]: http://jquery.org
-[lightbox2]: http://lokeshdhakar.com/projects/lightbox2
-[highlight-js]: http://softwaremaniacs.org/soft/highlight/en/
-[jsoup]: http://jsoup.org/
-[medialoot]: http://medialoot.com/
-[fluido]: http://maven.apache.org/skins/maven-fluido-skin/
+[bootstrap]: https://getbootstrap.com/
+[bootswatch]: https://bootswatch.com/
+[glyphicons]: https://glyphicons.com/
+[webfonts]: https://www.google.com/webfonts/
+[jquery]: https://jquery.org
+[lightbox2]: https://lokeshdhakar.com/projects/lightbox2
+[highlight-js]: https://softwaremaniacs.org/soft/highlight/en/
+[jsoup]: https://jsoup.org/
+[medialoot]: https://medialoot.com/
+[fluido]: https://maven.apache.org/skins/maven-fluido-skin/
 
 
 ## Copyright and license
@@ -85,7 +85,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
 You may obtain a copy of the License in the LICENSE file, or at:
 
-   http://www.apache.org/licenses/LICENSE-2.0
+   https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,

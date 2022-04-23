@@ -28,8 +28,8 @@ element:
 -   **default (default)** - Default code highlighting theme is used
 -   **theme name** - Entered theme is used
 
-[highlight-js]: http://softwaremaniacs.org/soft/highlight/en/
-[highlight-js-themes]: http://softwaremaniacs.org/media/soft/highlight/test.html#styleswitcher
+[highlight-js]: https://softwaremaniacs.org/soft/highlight/en/
+[highlight-js-themes]: https://softwaremaniacs.org/media/soft/highlight/test.html#styleswitcher
 
 
 ### Image previews (lightbox)
@@ -46,7 +46,7 @@ default but can be disabled using `<imgLightbox>` flag:
     with the image over the page
 -   **false** - disable lightbox, image link will open the image itself
 
-[lightbox]: http://lokeshdhakar.com/projects/lightbox2/
+[lightbox]: https://lokeshdhakar.com/projects/lightbox2/
 [lightbox-test]: img/snowdon.jpg "Lightbox example - climbing Snowdon in Wales, UK"
 
 
@@ -82,7 +82,7 @@ This can be disabled using `bootstrapCSS` flag:
 -   **true (default)** - adds Bootstrap CSS classes to tables; fixes table headings
 -   **false** - keep original table HTML
 
-[bootstrap]: http://twitter.github.com/bootstrap/
+[bootstrap]: https://twitter.github.com/bootstrap/
 
 
 ### Bootstrap icons
@@ -133,7 +133,7 @@ To use the inverse navigation bar colour, add the `<navbarInverse>` flag:
 -   **true** - Inverted navigation bar colour is used
 -   **false (default)** - Default Bootstrap theme colour is used for navigation bar
 
-[navbar-inverse]: http://twitter.github.com/bootstrap/components.html#navbar
+[navbar-inverse]: https://twitter.github.com/bootstrap/components.html#navbar
 
 
 ## Mark page header
@@ -157,7 +157,7 @@ Bootstrap themes and other components are not local to the website, but loaded f
 corresponding Content Delivery Networks. This reduces the load on the server and improves
 latency for users, who may have these resources already cached.
 
-To support both `http://` and `https://` websites, these resources can be referenced
+To support both `https://` and `https://` websites, these resources can be referenced
 using [protocol-relative URLs][protocol-url], starting with `//`. However, this is not supported
 when building the website locally, for `file://` URLs.
 
@@ -170,9 +170,9 @@ For this reason, the protocol-relative URLs are disabled by default. Enable them
 
 -   **true** - Bootstrap CSS, JS and other resources are referenced using protocol-relative
     URLs: `//`
--   **false (default)** - Resources are referenced using `http://` protocol
+-   **false (default)** - Resources are referenced using `https://` protocol
 
-[protocol-url]: http://paulirish.com/2010/the-protocol-relative-url/
+[protocol-url]: https://paulirish.com/2010/the-protocol-relative-url/
 
 
 ## Skin attribution
@@ -189,4 +189,4 @@ the popularity of the skin. If you want, it can be disabled using `<skinAttribut
 -   **true (default)** - Include links to Reflow skin homepage and author's website
 -   **false** - Remove skin attribution text and links
 
-[apache-license]: http://www.apache.org/licenses/LICENSE-2.0
+[apache-license]: https://www.apache.org/licenses/LICENSE-2.0

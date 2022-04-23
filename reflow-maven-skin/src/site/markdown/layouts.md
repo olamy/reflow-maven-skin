@@ -32,7 +32,7 @@ using `<sections>` element in the per-page (or global) configuration:
 </custom>
 ```
 
-[doxia-formats]: http://maven.apache.org/doxia/references/index.html
+[doxia-formats]: https://maven.apache.org/doxia/references/index.html
 
 
 ## Defining sections
@@ -52,8 +52,8 @@ sections after this in the text, they will have usual _body_ text layout.
 Note that the layout actually defines how the _subsections_ of each section are laid out.
 _Subsections_ currently are produced by splitting the section at the inner headings.
 
-[apt-ref]: http://maven.apache.org/doxia/references/apt-format.html
-[markdown-hr-ref]: http://daringfireball.net/projects/markdown/syntax#hr
+[apt-ref]: https://maven.apache.org/doxia/references/apt-format.html
+[markdown-hr-ref]: https://daringfireball.net/projects/markdown/syntax#hr
 
 
 ## Carousel
@@ -79,7 +79,7 @@ caption. For best results, aim for images of the same size, and use `h4` heading
 subsections.
 
 [carousel-reflow]: ../
-[carousel-bootstrap]: http://twitter.github.com/bootstrap/javascript.html#carousel
+[carousel-bootstrap]: https://twitter.github.com/bootstrap/javascript.html#carousel
 
 
 ## Columns
@@ -173,4 +173,4 @@ Sidebar section is indicated using `<sidebar />` element without any attributes.
 Reflow skin is built on [Bootstrap][bootstrap] and provides responsive design features out of the
 box. The page layouts are rearranged for smaller screens to provide a good viewing experience.
 
-[bootstrap]: http://getbootstrap.com
+[bootstrap]: https://getbootstrap.com

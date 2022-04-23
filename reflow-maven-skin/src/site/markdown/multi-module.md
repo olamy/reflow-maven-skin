@@ -13,7 +13,7 @@ brought together for deployment. Reflow skin allows reusing resources of top-lev
 <custom>
   <reflowSkin>
     ...
-    <absoluteResourceURL>http://mysite.com/</absoluteResourceURL>
+    <absoluteResourceURL>https://mysite.com/</absoluteResourceURL>
     ...
   </reflowSkin>
 </custom>
@@ -44,4 +44,4 @@ links reference pages in other submodules.
 
 Project URLs are indicated using the [`<url>` element in the POM file][pom-url] of each project.
 
-[pom-url]: http://maven.apache.org/pom.html#More_Project_Information
+[pom-url]: https://maven.apache.org/pom.html#More_Project_Information

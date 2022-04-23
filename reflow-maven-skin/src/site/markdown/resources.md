@@ -52,9 +52,9 @@ these files will have to be repeated for each sub-module.
 [bootstrap-theme]: themes/
 [local-css]: #Additional_CSS_files
 [msite-702]: https://jira.codehaus.org/browse/MSITE-702
-[bootstrap-cust]: http://getbootstrap.com/2.3.2/customize.html
-[bootswatch2]: http://bootswatch.com/2/
-[html5shiv]: http://html5shim.googlecode.com/svn/trunk/html5.js
+[bootstrap-cust]: https://getbootstrap.com/2.3.2/customize.html
+[bootswatch2]: https://bootswatch.com/2/
+[html5shiv]: https://html5shim.googlecode.com/svn/trunk/html5.js
 
 
 ## Additional CSS files
@@ -76,8 +76,8 @@ add the relevant CSS and JavaScript manually:
   <body>
     ...
     <head>
-      <link rel="stylesheet" href="http://yandex.st/highlightjs/7.5/styles/default.min.css">
-      <script src="http://yandex.st/highlightjs/7.5/highlight.min.js"></script>
+      <link rel="stylesheet" href="https://yandex.st/highlightjs/7.5/styles/default.min.css">
+      <script src="https://yandex.st/highlightjs/7.5/highlight.min.js"></script>
     </head>
     ...
   </body>
@@ -98,7 +98,7 @@ variable, e.g.:
 </head>
 ```
 
-[body-head-config]: http://maven.apache.org/plugins/maven-site-plugin/examples/sitedescriptor.html#Inject_xhtml_into_head
+[body-head-config]: https://maven.apache.org/plugins/maven-site-plugin/examples/sitedescriptor.html#Inject_xhtml_into_head
 [highlight-js-config]: misc.html#Code_highlight
 [resource-reuse]: multi-module.html#Reuse_resources
 

@@ -3,7 +3,7 @@
 Reflow skin builds on [Twitter Bootstrap][bootstrap] and supports predefined and custom
 Bootstrap themes. They are set using the `<theme>` element in the customization:
 
-[bootstrap]: http://twitter.github.com/bootstrap/
+[bootstrap]: https://twitter.github.com/bootstrap/
 
 ```xml
 <custom>
@@ -51,10 +51,10 @@ There are several options for the `<theme>` value:
     Preview full themes at the [Bootswatch gallery][bootswatch-gallery],
     or check out several examples of Reflow skin using Bootswatch themes below.
 
-[bootstrapcdn]: http://bootstrapcdn.com
-[bootstrap-custom]: http://twitter.github.com/bootstrap/customize.html
-[bootswatch]: http://bootswatch.com
-[bootswatch-gallery]: http://bootswatch.com/#gallery
+[bootstrapcdn]: https://bootstrapcdn.com
+[bootstrap-custom]: https://twitter.github.com/bootstrap/customize.html
+[bootswatch]: https://bootswatch.com
+[bootswatch-gallery]: https://bootswatch.com/#gallery
 
 ---
 

@@ -11,6 +11,7 @@ Thumbs.db
 nbproject
 *.sublime-project
 *.sublime-workspace
+*.iml
 
 # Maven output dirs
 target/

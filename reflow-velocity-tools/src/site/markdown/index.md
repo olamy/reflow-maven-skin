@@ -16,9 +16,9 @@ Refer to [Javadoc][javadoc-all] for each tool for more information.
 
     Provides URI utilities that expose URIs to the template.
 
-[velocity]: http://velocity.apache.org/
+[velocity]: https://velocity.apache.org/
 [per-page-info]: ../skin/config.html#Per-page_configuration
-[jsoup]: http://jsoup.org/
+[jsoup]: https://jsoup.org/
 
 [javadoc-all]: apidocs/
 [javadoc-config]: apidocs/lt/velykis/maven/skins/reflow/SkinConfigTool.html

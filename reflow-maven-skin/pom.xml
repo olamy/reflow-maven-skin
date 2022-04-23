@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   
   <parent>
@@ -15,18 +15,6 @@
   <description>Reflow is an Apache Maven site skin built on Twitter Bootstrap.
     It allows various structural and stylistic customizations to create
     a modern-looking Maven-generated website. Requires Reflow Velocity Tools.</description>
-
-  <!-- Indicate that the site for skin plug-in is nested under `skin` -->
-  <url>${site.url}/skin</url>
-
-  <distributionManagement>
-    <site>
-      <id>${site.deploy.id}</id>
-      <!-- Nest the actual skin plug-in under `skin` -->
-      <!-- Note that GitHub does not like having leading slash here -->
-      <url>${site.deploy.url}skin</url>
-    </site>
-  </distributionManagement>
 
   <build>
     <resources>

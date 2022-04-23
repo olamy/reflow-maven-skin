@@ -1,12 +1,12 @@
-# [Reflow Maven skin]( http://andriusvelykis.github.io/reflow-maven-skin/ )
+# [Reflow Maven skin]( https://olamy.github.io/reflow-maven-skin/ )
 
 Reflow is an Apache Maven site skin built on [Bootstrap][bootstrap]. It allows various structural
 and stylistic customizations to create a modern-looking Maven-generated website.
 
 To get started and see how the skin looks by default, check out
-http://andriusvelykis.github.io/reflow-maven-skin!
+https://olamy.github.io/reflow-maven-skin!
 
-[bootstrap]: http://getbootstrap.com
+[bootstrap]: https://getbootstrap.com
 
 ## Usage
 
@@ -69,7 +69,7 @@ on using the skin with Maven 2 site or other configurations.
 The skin is configurable using the `<custom><reflowSkin>` element in your `site.xml` file.
 Refer to [documentation][reflow-config] for all configuration options.
 
-[reflow-config]: http://andriusvelykis.github.io/reflow-maven-skin/skin/config.html
+[reflow-config]: https://olamy.github.io/reflow-maven-skin/skin/config.html
 
 A sample configuration file is given below:
 
@@ -81,7 +81,7 @@ A sample configuration file is given below:
       <theme>bootswatch-spacelab</theme>
       <brand>
         <name>My Project</name>
-        <href>http://andriusvelykis.github.io/reflow-maven-skin/</href>
+        <href>https://olamy.github.io/reflow-maven-skin/</href>
       </brand>
       <slogan>Super interesting project doing good things.</slogan>
       <titleTemplate>%2$s | %1$s</titleTemplate>
@@ -122,9 +122,9 @@ A sample configuration file is given below:
 ## Bug tracker
 
 Have a bug or a feature request? Please create an issue here on GitHub that conforms with
-[necolas's guidelines](http://github.com/necolas/issue-guidelines).
+[necolas's guidelines](https://github.com/necolas/issue-guidelines).
 
-http://github.com/andriusvelykis/reflow-maven-skin/issues
+https://github.com/olamy/reflow-maven-skin/issues
 
 
 ## Contributing
@@ -136,8 +136,8 @@ Fork the repository and submit pull requests.
 
 **Andrius Velykis**
 
-+ http://andrius.velykis.lt
-+ http://github.com/andriusvelykis
++ https://andrius.velykis.lt
++ https://github.com/andriusvelykis
 
 
 
@@ -149,7 +149,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
 You may obtain a copy of the License in the LICENSE file, or at:
 
-   http://www.apache.org/licenses/LICENSE-2.0
+   https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
