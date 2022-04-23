@@ -46,7 +46,7 @@ To use Reflow skin in your Maven site, [add it to site.xml][reflow-usage]:
 
 ```xml
 <skin>
-  <groupId>lt.velykis.maven.skins</groupId>
+  <groupId>io.github.olamy.maven.skins</groupId>
   <artifactId>reflow-maven-skin</artifactId>
   <version>1.1.1</version>
 </skin>
