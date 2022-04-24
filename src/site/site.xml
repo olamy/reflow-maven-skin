@@ -10,7 +10,7 @@
       <span class="color-highlight">Reflow</span> Maven Skin
       ]]>
     </name>
-    <href>https://andriusvelykis.github.io/reflow-maven-skin</href>
+    <href>https://olamy.github.io/reflow-maven-skin</href>
   </bannerLeft>
   
   <publishDate position="bottom" format="yyyy-MM-dd" />
@@ -29,7 +29,7 @@
       <theme>default</theme>
       <highlightJs>true</highlightJs>
       <highlightJsTheme>github</highlightJsTheme>
-      <absoluteResourceURL>https://andriusvelykis.github.io/reflow-maven-skin/</absoluteResourceURL>
+      <absoluteResourceURL>https://olamy.github.io/reflow-maven-skin/</absoluteResourceURL>
       <brand>
         <!-- Brand text in top-left part of the site -->
         <name>
@@ -37,7 +37,7 @@
           <span class="color-highlight">Reflow</span> Maven Skin
           ]]>
         </name>
-        <href>https://andriusvelykis.github.io/reflow-maven-skin</href>
+        <href>https://olamy.github.io/reflow-maven-skin</href>
       </brand>
       <slogan>Responsive Apache Maven skin to reflow the standard Maven site with a modern feel</slogan>
       <titleTemplate>%2$s | %1$s</titleTemplate>
@@ -103,8 +103,13 @@
           <tocTopMax>4</tocTopMax>
         </dependencies>
       </pages>
+      <googleAnalytics>
+        <useGtag>true</useGtag>
+      </googleAnalytics>
     </reflowSkin>
   </custom>
+
+  <googleAnalyticsAccountId>G-7V4CRXTEYB</googleAnalyticsAccountId>
 
   <body>
     <!-- Add a rel to Google profile for all pages -->
@@ -137,6 +142,7 @@
       <item name="Other" href="skin/misc.html" />
       <item name="Multi-module site" href="skin/multi-module.html" />
       <item name="Local resources" href="skin/resources.html" />
+      <item name="Analytics" href="skin/analytics.html" />
     </menu>
     <menu name="Tools" inherit="bottom">
       <item name="Reflow Velocity tools" href="reflow-velocity-tools/" />
