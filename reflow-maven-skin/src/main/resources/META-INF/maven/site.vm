@@ -1707,7 +1707,7 @@
 #*	*##end#*
 
 #*	*##if ( !$config.not("skinAttribution") )##
-				<p><a href="https://github.com/olamy/reflow-maven-skin" title="Reflow Maven skin">Reflow Maven skin</a> by <a href="https://andrius.velykis.lt" target="_blank" title="Andrius Velykis">Andrius Velykis</a>.</p>
+				<p><a href="https://github.com/olamy/reflow-maven-skin" title="Reflow Maven skin">Reflow Maven skin</a> maintained by <a href="https://twitter.com/olamy" target="_blank" title="Olivier Lamy">Olivier Lamy</a>.</p>
 #*	*##end#*
 
 
