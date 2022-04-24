@@ -171,11 +171,10 @@
           <reportSet>
             <reports>
               <report>summary</report>
-              <report>license</report>
               <report>modules</report>
-              <report>project-team</report>
+              <report>team</report>
               <report>scm</report>
-              <report>issue-tracking</report>
+              <report>issue-management</report>
               <report>dependencies</report>
               <report>dependency-convergence</report>
               <report>plugins</report>
