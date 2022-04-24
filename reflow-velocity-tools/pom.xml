@@ -46,8 +46,7 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.4.0</version>
         <configuration>
-          <javadocDirectory>${project.basedir}/src/javadoc</javadocDirectory>
-          <docfilessubdirs>true</docfilessubdirs>
+          <detectLinks>false</detectLinks>
         </configuration>
         <reportSets>
           <reportSet>
