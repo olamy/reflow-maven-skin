@@ -9,7 +9,7 @@
 
 	<head>
 		<meta charset="UTF-8" />
-		<title>Reflow Velocity tools | Reflow Velocity Tools</title>
+		<title>Analytics | Reflow Maven Skin</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="" />
 		<meta http-equiv="content-language" content="en" />
@@ -45,7 +45,7 @@
 
 	</head>
 
-	<body class="page-index project-reflow-velocity-tools" data-spy="scroll" data-offset="60" data-target="#toc-scroll-target">
+	<body class="page-analytics project-reflow-maven-skin" data-spy="scroll" data-offset="60" data-target="#toc-scroll-target">
 
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
@@ -58,27 +58,27 @@
 					<a class="brand" href=".."><span class="color-highlight">Reflow</span> Maven Skin</a>
 					<div class="nav-collapse collapse" id="top-nav-collapse">
 						<ul class="nav pull-right">
-							<li ><a href="../skin/index.html#Usage" title="Download">Download</a></li>
+							<li ><a href="index.html#Usage" title="Download">Download</a></li>
 							<li ><a href="https://github.com/olamy/reflow-maven-skin/" title="GitHub project" class="externalLink">GitHub project</a></li>
-							<li class="dropdown">
+							<li class="dropdown active">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li ><a href="../skin/" title="Usage">Usage</a></li>
-									<li ><a href="../skin/config.html" title="Configuration">Configuration</a></li>
-									<li ><a href="../skin/themes/" title="Themes">Themes</a></li>
-									<li ><a href="../skin/layouts.html" title="Layouts">Layouts</a></li>
-									<li ><a href="../skin/components.html" title="Components">Components</a></li>
-									<li ><a href="../skin/misc.html" title="Other">Other</a></li>
-									<li ><a href="../skin/multi-module.html" title="Multi-module site">Multi-module site</a></li>
-									<li ><a href="../skin/resources.html" title="Local resources">Local resources</a></li>
-									<li ><a href="../skin/analytics.html" title="Analytics">Analytics</a></li>
+									<li ><a href="./" title="Usage">Usage</a></li>
+									<li ><a href="config.html" title="Configuration">Configuration</a></li>
+									<li ><a href="themes/" title="Themes">Themes</a></li>
+									<li ><a href="layouts.html" title="Layouts">Layouts</a></li>
+									<li ><a href="components.html" title="Components">Components</a></li>
+									<li ><a href="misc.html" title="Other">Other</a></li>
+									<li ><a href="multi-module.html" title="Multi-module site">Multi-module site</a></li>
+									<li ><a href="resources.html" title="Local resources">Local resources</a></li>
+									<li class="active"><a href="" title="Analytics">Analytics</a></li>
 								</ul>
 							</li>
-							<li class="dropdown active">
+							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li class="active"><a href="./" title="Reflow Velocity tools">Reflow Velocity tools</a></li>
-									<li ><a href="apidocs/" title="Tools Javadoc">Tools Javadoc</a></li>
+									<li ><a href="../reflow-velocity-tools/" title="Reflow Velocity tools">Reflow Velocity tools</a></li>
+									<li ><a href="../reflow-velocity-tools/apidocs/" title="Tools Javadoc">Tools Javadoc</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
@@ -117,10 +117,28 @@
 			<ul class="breadcrumb">
 				<li><a href="../" title="Reflow">Reflow</a></li>
 				<li class="divider">/</li>
-				<li><a href="./" title="Velocity tools">Velocity tools</a></li>
+				<li><a href="./" title="Maven skin">Maven skin</a></li>
 				<li class="divider">/</li>
-				<li>Reflow Velocity tools</li>
+				<li>Analytics</li>
 			</ul>
+		</div>
+		<hr class="toc-separator" />
+		<div id="toc-bar" class="navbar" data-spy="affix" data-offset-top="250">
+			<div class="navbar-inner">
+				<div id="toc-scroll-target" class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target="#toc-nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<div class="nav-collapse collapse" id="toc-nav-collapse">
+						<ul id="toc" class="nav">
+						<li class="toplevel"><a href="#analytics" title="Analytics">Analytics</a></li>
+						<li class="toplevel"><a href="#Google_Analytics" title="Google Analytics">Google Analytics</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 
@@ -129,39 +147,32 @@
 		<div class="span12">
 			<div class="body-content">
 <div class="page-header">
- <h1>Reflow Velocity tools</h1>
+ <h1 id="analytics">Analytics</h1>
 </div> 
-<p>Reflow skin provides custom tools for <a class="externalLink" href="https://velocity.apache.org/">Apache Velocity</a> to be used in Maven site template. These objects are contributed to Velocity context and can be used within the template. Refer to <a href="apidocs/">Javadoc</a> for each tool for more information.</p> 
+<p>Reflow skins supports two analytics system:</p> 
 <ul> 
- <li> <p><b><a href="apidocs/lt/velykis/maven/skins/reflow/SkinConfigTool.html"><code>SkinConfigTool</code></a></b> (key <b>$config</b>)</p> <p>Provides a uniform access to Maven site custom configuration options. Supports global and per-page configuration. See info on <a href="../skin/config.html#Per-page_configuration"><i>per-page configuration</i></a> in Reflow skin for an example of features it brings.</p> </li> 
- <li> <p><b><a href="apidocs/lt/velykis/maven/skins/reflow/HtmlTool.html"><code>HtmlTool</code></a></b> (key <b>$htmlTool</b>)</p> <p>Provides methods to modify and query HTML text using <a class="externalLink" href="https://jsoup.org/">jsoup</a> library.</p> </li> 
- <li> <p><b><a href="apidocs/lt/velykis/maven/skins/reflow/URITool.html"><code>URITool</code></a></b> (key <b>$uriTool</b>)</p> <p>Provides URI utilities that expose URIs to the template.</p> </li> 
+ <li>Matomo (TODO)</li> 
+ <li>Google Analytics</li> 
 </ul> 
 <section> 
- <h2 id="Usage">Usage</h2> 
- <p>To enable these tools, add <code>reflow-velocity-tools</code> dependency to <code>maven-site-plugin</code> in the POM file:</p> 
+ <h2 id="Google_Analytics">Google Analytics</h2> 
+ <p>To use this with Reflow Maven skin, use the following configuration in the [<code>site.xml</code> site descriptor][site-xml] file:</p> 
  <div class="source"> 
-  <pre><code class="language-xml">&lt;build&gt;
-  &lt;plugins&gt;
-    ...
-    &lt;plugin&gt;
-      &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
-      &lt;artifactId&gt;maven-site-plugin&lt;/artifactId&gt;
-      &lt;version&gt;3.10&lt;/version&gt;
-      &lt;dependencies&gt;
-        ...
-        &lt;dependency&gt;
-          &lt;groupId&gt;io.github.olamy.maven.skins&lt;/groupId&gt;
-          &lt;artifactId&gt;reflow-velocity-tools&lt;/artifactId&gt;
-          &lt;version&gt;2.0.0-SNAPSHOT&lt;/version&gt;
-        &lt;/dependency&gt;
-        ...
-      &lt;/dependencies&gt;
+  <pre><code class="language-xml">&lt;project&gt;
+  ...
+  &lt;googleAnalyticsAccountId&gt;G-7V4CRXTEYB&lt;/googleAnalyticsAccountId&gt;
+  &lt;custom&gt;
+    &lt;reflowSkin&gt;
       ...
-    &lt;/plugin&gt;
-    ...
-  &lt;/plugins&gt;
-&lt;/build&gt;
+      &lt;googleAnalytics&gt;
+        &lt;useGtag&gt;true&lt;/useGtag&gt;
+        &lt;anonymizeIp&gt;true&lt;/anonymizeIp&gt;
+        &lt;forceSSL&gt;true&lt;/forceSSL&gt;
+      &lt;/googleAnalytics&gt;
+      ...
+    &lt;/reflowSkin&gt;
+  &lt;/custom&gt;
+&lt;/project&gt;
 </code></pre> 
  </div> 
 </section>
@@ -190,11 +201,11 @@
 							<a href="https://github.com/olamy/reflow-maven-skin/releases" title="Release notes" class="externalLink">Release notes</a>
 						</li>
 						<li class="nav-header">Tools</li>
-						<li class="active">
-							<a href="#" title="Reflow Velocity tools">Reflow Velocity tools</a>
+						<li >
+							<a href="../reflow-velocity-tools/" title="Reflow Velocity tools">Reflow Velocity tools</a>
 						</li>
 						<li >
-							<a href="apidocs/" title="Tools Javadoc">Tools Javadoc</a>
+							<a href="../reflow-velocity-tools/apidocs/" title="Tools Javadoc">Tools Javadoc</a>
 						</li>
 					</ul>
 				</div>
@@ -202,7 +213,7 @@
 					<ul class="nav nav-list">
 						<li class="nav-header">Download</li>
 						<li >
-							<a href="../skin/index.html#Usage" title="Download">Download</a>
+							<a href="index.html#Usage" title="Download">Download</a>
 						</li>
 						<li >
 							<a href="../license.html" title="License">License</a>
@@ -223,31 +234,31 @@
 					<ul class="nav nav-list">
 						<li class="nav-header">Documentation</li>
 						<li >
-							<a href="../skin/" title="Usage">Usage</a>
+							<a href="./" title="Usage">Usage</a>
 						</li>
 						<li >
-							<a href="../skin/config.html" title="Configuration">Configuration</a>
+							<a href="config.html" title="Configuration">Configuration</a>
 						</li>
 						<li >
-							<a href="../skin/themes/" title="Themes">Themes</a>
+							<a href="themes/" title="Themes">Themes</a>
 						</li>
 						<li >
-							<a href="../skin/layouts.html" title="Layouts">Layouts</a>
+							<a href="layouts.html" title="Layouts">Layouts</a>
 						</li>
 						<li >
-							<a href="../skin/components.html" title="Components">Components</a>
+							<a href="components.html" title="Components">Components</a>
 						</li>
 						<li >
-							<a href="../skin/misc.html" title="Other">Other</a>
+							<a href="misc.html" title="Other">Other</a>
 						</li>
 						<li >
-							<a href="../skin/multi-module.html" title="Multi-module site">Multi-module site</a>
+							<a href="multi-module.html" title="Multi-module site">Multi-module site</a>
 						</li>
 						<li >
-							<a href="../skin/resources.html" title="Local resources">Local resources</a>
+							<a href="resources.html" title="Local resources">Local resources</a>
 						</li>
-						<li >
-							<a href="../skin/analytics.html" title="Analytics">Analytics</a>
+						<li class="active">
+							<a href="#" title="Analytics">Analytics</a>
 						</li>
 					</ul>
 				</div>
@@ -256,9 +267,6 @@
 						<li class="nav-header">Maven documentation</li>
 						<li >
 							<a href="project-info.html" title="Project Information">Project Information <i class="icon-chevron-right"></i></a>
-						</li>
-						<li >
-							<a href="project-reports.html" title="Project Reports">Project Reports <i class="icon-chevron-right"></i></a>
 						</li>
 					</ul>
 				</div>
