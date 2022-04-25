@@ -10,7 +10,7 @@
 
   <groupId>io.github.olamy.maven.skins</groupId>
   <artifactId>reflow-parent</artifactId>
-  <version>2.0.1-SNAPSHOT</version>
+  <version>2.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Reflow Maven Skin</name>
@@ -86,7 +86,7 @@
       <dependency>
         <groupId>io.github.olamy.maven.skins</groupId>
         <artifactId>reflow-velocity-tools</artifactId>
-        <version>2.0.1-SNAPSHOT</version>
+        <version>2.0.0-SNAPSHOT</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -102,7 +102,7 @@
           <dependency>
             <groupId>io.github.olamy.maven.skins</groupId>
             <artifactId>reflow-velocity-tools</artifactId>
-            <version>2.0.1-SNAPSHOT</version>
+            <version>2.0.0-SNAPSHOT</version>
           </dependency>
         </dependencies>
         <configuration>
