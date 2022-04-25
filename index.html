@@ -124,34 +124,12 @@
 			<div class="item active">
 				<a href="skin/themes/"><img src="images/carousel-themes.png" alt="Bootswatch themes" /></a>
 				<div class="carousel-caption">
-					<h4 id="Bootstrap_themes_from_Bootswatch"><a href="skin/themes/">Bootstrap themes from Bootswatch</a></h4>  
-<p>Select a free theme for your website from an excellent gallery at <a class="externalLink" href="https://bootswatch.com">Bootswatch</a>. Out of the box support for these and other custom <a class="externalLink" href="https://getbootstrap.com">Bootstrap</a> themes.</p> 
-<section> 
-</section>
-				</div>
-			</div>
-			<div class="item ">
-				<a href="skin/layouts.html"><img src="images/carousel-layouts.jpg" alt="Page layouts" /></a>
-				<div class="carousel-caption">
-					<h4 id="Page_layouts"><a href="skin/layouts.html">Page layouts</a></h4>  
+					<p>Select a free theme for your website from an excellent gallery at <a class="externalLink" href="https://bootswatch.com">Bootswatch</a>. Out of the box support for these and other custom <a class="externalLink" href="https://getbootstrap.com">Bootstrap</a> themes.</p> 
+<p><a href="skin/layouts.html"><img src="images/carousel-layouts.jpg" alt="Page layouts" /></a></p> 
 <p>Write plain text in Markdown or APT, then set different layouts to your page sections.</p> 
-<section> 
-</section>
-				</div>
-			</div>
-			<div class="item ">
-				<a href="skin/misc.html"><img src="images/carousel-components.jpg" alt="Modern skin" /></a>
-				<div class="carousel-caption">
-					<h4 id="Modern_skin"><a href="skin/misc.html">Modern skin</a></h4>  
+<p><a href="skin/misc.html"><img src="images/carousel-components.jpg" alt="Modern skin" /></a></p> 
 <p>Reflow skin uses modern components from Bootstrap and other libraries, upgrades Maven generated site and provides further enhancements.</p> 
-<section> 
-</section>
-				</div>
-			</div>
-			<div class="item ">
-				<a href="reflow-velocity-tools/"><img src="images/carousel-tools.png" alt="Reflow Velocity tools" /></a>
-				<div class="carousel-caption">
-					<h4 id="New_Velocity_tools"><a href="reflow-velocity-tools/">New Velocity tools</a></h4>  
+<p><a href="reflow-velocity-tools/"><img src="images/carousel-tools.png" alt="Reflow Velocity tools" /></a></p> 
 <p>The skin adds a library of new Velocity tools to use in your own Maven template: rewrite HTML code, support per-page configurations and more!</p>
 				</div>
 			</div>
@@ -161,23 +139,17 @@
 	</div>
 	<div class="row columns columns2">
 		<div class="span6">
-			<h2 id="Get_it_now">Get it now</h2>
-<p>To use Reflow skin in your Maven site, <a href="skin/">add it to site.xml</a>:</p>
+			<p>To use Reflow skin in your Maven site, <a href="skin/">add it to site.xml</a>:</p>
 <div class="source"> 
  <pre><code class="language-xml">&lt;skin&gt;
   &lt;groupId&gt;io.github.olamy.maven.skins&lt;/groupId&gt;
   &lt;artifactId&gt;reflow-maven-skin&lt;/artifactId&gt;
-  &lt;version&gt;2.0.0-SNAPSHOT&lt;/version&gt;
+  &lt;version&gt;2.0.0&lt;/version&gt;
 &lt;/skin&gt;
-</code></pre> 
+</code></pre>
 </div>
 <p>Furthermore, the skin requires accompanying <a href="reflow-velocity-tools/">Reflow Velocity tools</a> as a dependency as well as Apache Velocity 1.7. <a href="skin/">Add them as dependencies</a> to <code>maven-site-plugin</code>.</p>
 <p><a href="skin/">Full usage instructions &raquo;</a></p>
-<section>      
-</section>
-		</div>
-		<div class="span6">
-			<h2 id="Responsive_layouts">Responsive layouts</h2>
 <p>Write your pages in <a class="externalLink" href="https://maven.apache.org/doxia/references/index.html">APT or Markdown</a>, then restructure them using Reflow skin <a href="skin/layouts.html">layouts</a>:</p>
 <ul> 
  <li><b>Carousel</b> - spinning image slideshow</li> 
@@ -188,13 +160,6 @@
 </ul>
 <p>Partition the page into sections using <code>&lt;hr/&gt;</code> elements, and define preferred layouts for each section in <code>site.xml</code>. Reflow skin is responsive thanks to <a class="externalLink" href="https://getbootstrap.com">Bootstrap</a>, so the layouts will be rearranged automatically for readability on small screens.</p>
 <p><a href="skin/layouts.html">Read more about layouts in the documentation &raquo;</a></p>
-<section>      
-</section>
-		</div>
-	</div>
-	<div class="row">
-		<div class="span6">
-			<h2 id="Themes">Themes</h2>
 <p>The skin theme can be <a href="skin/themes/">switched easily</a>: just select a Bootstrap theme to give an easy makeover for your Maven site.</p>
 <ul> 
  <li><b>Default</b> - use the default <a class="externalLink" href="https://getbootstrap.com">Bootstrap</a> theme</li> 
@@ -203,11 +168,6 @@
 </ul>
 <p><b>Need to change something?</b> Extend the skin with custom <code>site.css</code> file in your project, and <a href="skin/multi-module.html">reuse it for multi-module site</a>.</p>
 <p><a href="skin/themes/">How to select a theme &raquo;</a></p>
-<section>     
-</section>
-		</div>
-		<div class="span6">
-			<h2 id="Configure">Configure</h2>
 <p>Reflow is very configurable: many features and components can be disabled, and optional enhancements enabled using <a href="skin/config.html">configuration in <code>site.xml</code></a>:</p>
 <ul> 
  <li><b>Table of contents</b> - display ToC for each page: top bar or sidebar</li> 
@@ -220,27 +180,21 @@
 		</div>
 	</div>
 	<div class="row">
-	</div>
-	<div class="row">
 		<div class="span8">
 			<div class="body-content">
-				<section> 
- <h2 id="Velocity_tools">Velocity tools</h2> 
- <p>Reflow skin provides custom Velocity tools library to be used in Maven site template:</p> 
- <ul> 
-  <li><b><code>SkinConfigTool</code></b> - convenient access to custom configuration options (global and per-page)</li> 
-  <li><b><code>HtmlTool</code></b> - query and modify HTML text</li> 
-  <li><b><code>URITool</code></b> - use Java URIs in the template</li> 
- </ul> 
- <p>To enable these tools for any skin, add <code>reflow-velocity-tools</code> dependency to <code>maven-site-plugin</code> in the POM.</p> 
- <p><a href="reflow-velocity-tools/">Read more about usage and browse the Javadoc &raquo;</a></p>   
-</section>
+				<p>Reflow skin provides custom Velocity tools library to be used in Maven site template:</p>
+<ul> 
+ <li><b><code>SkinConfigTool</code></b> - convenient access to custom configuration options (global and per-page)</li> 
+ <li><b><code>HtmlTool</code></b> - query and modify HTML text</li> 
+ <li><b><code>URITool</code></b> - use Java URIs in the template</li> 
+</ul>
+<p>To enable these tools for any skin, add <code>reflow-velocity-tools</code> dependency to <code>maven-site-plugin</code> in the POM.</p>
+<p><a href="reflow-velocity-tools/">Read more about usage and browse the Javadoc &raquo;</a></p>
 			</div>
 		</div>
 		<div class="span4">
 			<div class="well sidebar">
-	<h3 id="About">About</h3>
-<p>Reflow Maven skin is an <a class="externalLink" href="https://maven.apache.org/guides/mini/guide-site.html">Apache Maven site</a> skin built on <a class="externalLink" href="https://getbootstrap.com">Bootstrap</a>.</p>
+	<p>Reflow Maven skin is an <a class="externalLink" href="https://maven.apache.org/guides/mini/guide-site.html">Apache Maven site</a> skin built on <a class="externalLink" href="https://getbootstrap.com">Bootstrap</a>.</p>
 <p>The code is <a class="externalLink" href="https://github.com/olamy/reflow-maven-skin/">open source</a> and licensed under <a class="externalLink" href="https://www.apache.org/licenses/LICENSE-2.0">Apache license</a>. The skin can be used freely for your Maven projects.</p>
 <p><a href="contribute.html">Contribute</a> by reporting issues, suggesting new features, or forking the Git repository on GitHub and adding some good code!</p>
 <p>In the end, if you <i>really really</i> like the skin and want to support the author, I will be glad to <a class="externalLink" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=QWKNRFZH52828">accept a small donation</a>.</p>
