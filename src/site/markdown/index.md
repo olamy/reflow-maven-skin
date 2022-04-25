@@ -47,6 +47,8 @@ First steps were to make it work with recent version of `maven-site-plugin` and 
 
 Next steps will be to update boostrap version etc..
 
+Have a look at [Releases page](https://github.com/olamy/reflow-maven-skin/releases)
+
 ## Get it now
 
 To use Reflow skin in your Maven site, [add it to site.xml][reflow-usage]:
