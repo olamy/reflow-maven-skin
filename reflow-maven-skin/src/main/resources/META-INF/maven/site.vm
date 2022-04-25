@@ -1446,7 +1446,9 @@
 		*#$headContent
 #*	*##end#*
 
-	*##googleAnalytics( $decoration.googleAnalyticsAccountId )
+#**##googleAnalytics( $decoration.googleAnalyticsAccountId )
+
+#**##matomo( $decoration.custom.getChild('matomo') )
 ##
 	</head>
 
