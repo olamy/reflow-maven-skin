@@ -52,16 +52,19 @@ Next steps will be to update boostrap version etc..
 To use Reflow skin in your Maven site, [add it to site.xml][reflow-usage]:
 
 ```xml
-<skin>
-  <groupId>io.github.olamy.maven.skins</groupId>
-  <artifactId>reflow-maven-skin</artifactId>
-  <version>2.0.0</version>
-</skin>
+<project>
+  ...
+  <skin>
+    <groupId>io.github.olamy.maven.skins</groupId>
+    <artifactId>reflow-maven-skin</artifactId>
+    <version>2.0.0</version>
+  </skin>
+  ...
+</project>
 ```
 
 Furthermore, the skin requires accompanying [Reflow Velocity tools][reflow-tools] as a dependency
-as well as Apache Velocity 1.7.
-[Add them as dependencies][reflow-usage] to `maven-site-plugin`.
+[Add it as a dependency][reflow-usage] to `maven-site-plugin`.
 
 [Full usage instructions &raquo;][reflow-usage]
 
