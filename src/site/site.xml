@@ -107,6 +107,11 @@
         <useGtag>true</useGtag>
       </googleAnalytics>
     </reflowSkin>
+    <gitHub combine.children="append">
+      <projectId>olamy/reflow-maven-skin</projectId>
+      <ribbonOrientation>right</ribbonOrientation>
+      <ribbonColor>gray</ribbonColor>
+    </gitHub>
   </custom>
 
   <googleAnalyticsAccountId>G-7V4CRXTEYB</googleAnalyticsAccountId>
