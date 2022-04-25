@@ -41,7 +41,7 @@ Let me know if you are using Reflow skin in your project. I may get around to cr
 page listing skin user sites.
 
 [Contact me][av-site] if you have questions about the skin, or just like to say something about it.
-If you _really really_ like the skin and want to support the author, I will be glad to
+If you _really really_ like the skin and want to support the maintainer, I will be glad to
 [accept a small donation][donate].
 
 [av-site]: https://twitter.com/olamy
