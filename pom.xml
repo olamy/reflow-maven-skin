@@ -73,11 +73,17 @@
       <name>Andrius Velykis</name>
       <timezone>0</timezone>
       <url>https://andrius.velykis.lt</url>
+      <roles>
+        <role>Original author</role>
+      </roles>
     </developer>
     <developer>
       <id>olamy</id>
       <name>Olivier Lamy</name>
       <timezone>Australia/Brisbane</timezone>
+      <roles>
+        <role>maintainer</role>
+      </roles>
     </developer>
   </developers>
 

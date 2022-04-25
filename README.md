@@ -119,7 +119,7 @@ https://github.com/olamy/reflow-maven-skin/issues
 Fork the repository and submit pull requests.
 
 
-## Author
+## Original Author
 
 This repo is a fork from https://github.com/andriusvelykis/reflow-maven-skin 
 

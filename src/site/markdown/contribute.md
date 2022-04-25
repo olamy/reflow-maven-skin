@@ -44,8 +44,8 @@ page listing skin user sites.
 If you _really really_ like the skin and want to support the author, I will be glad to
 [accept a small donation][donate].
 
-[av-site]: https://andrius.velykis.lt
-[donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=QWKNRFZH52828
+[av-site]: https://twitter.com/olamy
+[donate]: https://paypal.me/oliverlamy
 
 
 ## Acknowledgements
