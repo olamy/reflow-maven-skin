@@ -13,13 +13,13 @@
   <version>2.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>Reflow Maven Skin Parent</name>
+  <name>Reflow Maven Skin</name>
   <description>Reflow Maven skin and supporting libraries parent</description>
   <inceptionYear>2012</inceptionYear>
   
   <modules>
-    <module>reflow-velocity-tools</module>
-    <module>reflow-maven-skin</module>
+    <module>velocity-tools</module>
+    <module>skin</module>
   </modules>
 
   <properties>

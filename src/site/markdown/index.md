@@ -34,7 +34,7 @@ support per-page configurations and more!
 [themes]: skin/themes/
 [reflow-layouts]: skin/layouts.html
 [reflow-misc]: skin/misc.html
-[reflow-tools]: reflow-velocity-tools/
+[reflow-tools]: velocity-tools/
 
 
 ---

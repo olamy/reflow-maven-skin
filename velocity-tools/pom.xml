@@ -11,8 +11,18 @@
 
   <artifactId>reflow-velocity-tools</artifactId>
 
-  <name>Reflow Velocity Tools</name>
+  <name>Reflow Maven Skin :: Velocity tools</name>
   <description>Velocity tools supporting Reflow Maven skin</description>
+
+  <url>${site.url}/velocity-tools</url>
+
+  <distributionManagement>
+    <site>
+      <id>${site.deploy.id}</id>
+      <name>Deployment through GitHub's site deployment plugin</name>
+      <url>${site.deploy.url}/velocity-tools</url>
+    </site>
+  </distributionManagement>
 
   <dependencies>
     <dependency>

@@ -13,7 +13,15 @@
 
   <url>${site.url}/skin</url>
 
-  <name>Reflow Maven Skin</name>
+  <distributionManagement>
+    <site>
+      <id>${site.deploy.id}</id>
+      <name>Deployment through GitHub's site deployment plugin</name>
+      <url>${site.deploy.url}/skin</url>
+    </site>
+  </distributionManagement>
+
+  <name>Reflow Maven Skin :: Skin</name>
   <description>Reflow is an Apache Maven site skin built on Twitter Bootstrap.
     It allows various structural and stylistic customizations to create
     a modern-looking Maven-generated website. Requires Reflow Velocity Tools.</description>
