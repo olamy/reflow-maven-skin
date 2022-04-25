@@ -30,15 +30,16 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.Stack;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 import org.apache.velocity.tools.ToolContext;
 import org.apache.velocity.tools.config.DefaultKey;
 import org.apache.velocity.tools.generic.SafeConfig;
 import org.apache.velocity.tools.generic.ValueParser;
 import org.jsoup.Jsoup;
-import org.jsoup.helper.StringUtil;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.nodes.Node;
 import org.jsoup.parser.Tag;
 
 /**
@@ -211,7 +212,7 @@ public class HtmlTool extends SafeConfig {
 		if (separators.size() > 0) {
 			List<List<Element>> partitions = split(separators, separatorStrategy, body);
 
-			List<String> sectionHtml = new ArrayList<String>();
+			List<String> sectionHtml = new ArrayList<>();
 
 			for (List<Element> partition : partitions) {
 				sectionHtml.add(outerHtml(partition));
@@ -238,7 +239,7 @@ public class HtmlTool extends SafeConfig {
 	private static List<List<Element>> split(Collection<Element> separators,
 			JoinSeparator separatorStrategy, Element parent) {
 
-		List<List<Element>> partitions = new LinkedList<List<Element>>();
+		List<List<Element>> partitions = new LinkedList<>();
 
 		for (Element child : parent.children()) {
 
@@ -255,7 +256,7 @@ public class HtmlTool extends SafeConfig {
 				}
 
 				// add an empty new partition
-				List<Element> newPartition = new LinkedList<Element>();
+				List<Element> newPartition = new LinkedList<>();
 				partitions.add(newPartition);
 
 				if (separatorStrategy == JoinSeparator.AFTER) {
@@ -284,9 +285,8 @@ public class HtmlTool extends SafeConfig {
 					}
 
 					// add the remaining partitions
-					for (List<Element> nextPartition : childPartitions.subList(1, childPartitions.size())) {
-						partitions.add(nextPartition);
-					}
+					partitions.addAll(childPartitions.subList(1, childPartitions.size()));
+
 				}
 			}
 		}
@@ -303,7 +303,7 @@ public class HtmlTool extends SafeConfig {
 	 */
 	private static List<Element> getLastPartition(List<List<Element>> partitions) {
 		if (partitions.isEmpty()) {
-			List<Element> newPartition = new LinkedList<Element>();
+			List<Element> newPartition = new LinkedList<>();
 			partitions.add(newPartition);
 			return newPartition;
 		} else {
@@ -469,7 +469,7 @@ public class HtmlTool extends SafeConfig {
 	 * @return
 	 */
 	private static List<Element> filterParents(List<Element> elements) {
-		List<Element> filtered = new ArrayList<Element>();
+		List<Element> filtered = new ArrayList<>();
 		for (Element element : elements) {
 			// get the intersection of parents and selected elements
 			List<Element> parentsInter = element.parents();
@@ -509,15 +509,14 @@ public class HtmlTool extends SafeConfig {
 			List<Element> elements = extracted.subList(1, extracted.size());
 
 			// convert to HTML
-			List<String> elementStr = new ArrayList<String>();
-			for (Element el : elements) {
-				elementStr.add(el.outerHtml());
-			}
+			List<String> elementStr = elements.stream()
+					.map(Node::outerHtml)
+					.collect(Collectors.toList());
 
 			return new DefaultExtractResult(elementStr, body.html());
 		} else {
 			// nothing to extract
-			return new DefaultExtractResult(Collections.<String> emptyList(), content);
+			return new DefaultExtractResult(Collections.emptyList(), content);
 		}
 	}
 	
@@ -528,7 +527,7 @@ public class HtmlTool extends SafeConfig {
 	 * @author Andrius Velykis
 	 * @since 1.0
 	 */
-	public static interface ExtractResult {
+	public interface ExtractResult {
 		
 		/**
 		 * Retrieves the extracted HTML elements.
@@ -898,8 +897,8 @@ public class HtmlTool extends SafeConfig {
 		String nameA = "a[name]:not([href])";
 		
 		// select all headings that have inner named anchor
-		List<Element> headingsInnerA = body.select(StringUtil.join(
-				concat(headNoIds, ":has(" + nameA + ")", true), ", "));
+		List<Element> headingsInnerA = body.select(String.join(", ",
+				concat(headNoIds, ":has(" + nameA + ")", true)));
 		
 		boolean modified = false;
 		for (Element heading : headingsInnerA) {
@@ -912,8 +911,8 @@ public class HtmlTool extends SafeConfig {
 		}
 		
 		// select all headings that have a preceding named anchor
-		List<Element> headingsPreA = body.select(StringUtil.join(
-				concat(headNoIds, nameA + " + ", false), ", "));
+		List<Element> headingsPreA = body.select(String.join( ", ",
+				concat(headNoIds, nameA + " + ", false)));
 		
 		for (Element heading : headingsPreA) {
 			Element anchor = heading.previousElementSibling();
@@ -926,8 +925,8 @@ public class HtmlTool extends SafeConfig {
 		// select all headings that are followed by a named anchor
 		// no selector available for that, so first select the anchors
 		// then retrieve the headings
-		List<Element> anchorsPreH = body.select(StringUtil.join(
-				concat(headNoIds, " + " + nameA, true), ", "));
+		List<Element> anchorsPreH = body.select(String.join(", ",
+				concat(headNoIds, " + " + nameA, true)));
 		
 		for (Element anchor : anchorsPreH) {
 			Element heading = anchor.previousElementSibling();
@@ -981,7 +980,7 @@ public class HtmlTool extends SafeConfig {
 	 * @since 1.0
 	 */
 	public static List<String> concat(List<String> elements, String text, boolean append) {
-		List<String> concats = new ArrayList<String>();
+		List<String> concats = new ArrayList<>();
 		
 		for (String element : elements) {
 			concats.add(append ? element + text : text + element);
@@ -1031,7 +1030,7 @@ public class HtmlTool extends SafeConfig {
 		List<String> headNoIds = concat(HEADINGS, ":not([id])", true);
 		
 		// select all headings that do not have an ID
-		List<Element> headingsNoId = body.select(StringUtil.join(headNoIds, ", "));
+		List<Element> headingsNoId = body.select(String.join( ", ", headNoIds));
 		
 		if (!headingsNoId.isEmpty() || modified) {
 			for (Element heading : headingsNoId) {
@@ -1183,15 +1182,15 @@ public class HtmlTool extends SafeConfig {
 		List<String> headIds = concat(HEADINGS, "[id]", true);
 
 		// select all headings that have an ID
-		List<Element> headings = body.select(StringUtil.join(headIds, ", "));
+		List<Element> headings = body.select(String.join(", ", headIds));
 
-		List<HeadingItem> headingItems = new ArrayList<HeadingItem>();
+		List<HeadingItem> headingItems = new ArrayList<>();
 		for (Element heading : headings) {
 			headingItems.add(new HeadingItem(heading.id(), heading.text(), headingIndex(heading)));
 		}
 
-		List<HeadingItem> topHeadings = new ArrayList<HeadingItem>();
-		Stack<HeadingItem> parentHeadings = new Stack<HeadingItem>();
+		List<HeadingItem> topHeadings = new ArrayList<>();
+		Stack<HeadingItem> parentHeadings = new Stack<>();
 
 		for (HeadingItem heading : headingItems) {
 
@@ -1277,14 +1276,14 @@ public class HtmlTool extends SafeConfig {
 		 * 
 		 * @return element {@code id} value
 		 */
-		public String getId();
+		String getId();
 
 		/**
 		 * Retrieves the text contents of the HTML element (rendered for display)
 		 * 
 		 * @return text contents of the element
 		 */
-		public String getText();
+		String getText();
 
 		/**
 		 * Retrieves the children of the HTML element (nested within the element)
