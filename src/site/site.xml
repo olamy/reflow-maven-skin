@@ -118,6 +118,7 @@
     <links>
       <item name="Download" href="skin/index.html#Usage" />
       <item name="GitHub project" href="https://github.com/olamy/reflow-maven-skin/" />
+      <item name="Release notes" href="https://github.com/olamy/reflow-maven-skin/releases" />
     </links>
 
     <breadcrumbs>

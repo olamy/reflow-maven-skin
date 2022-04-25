@@ -55,8 +55,6 @@ Reflow Velocity tools ([`reflow-velocity-tools`][reflow-tools]) are required by 
 to read skin configuration and provides other functionality. The library must be available when
 generating Maven site.
 
-Note that _Velocity 1.7_ is also required by the template.
-
 ---
 
 
