@@ -160,8 +160,8 @@
              will set the configuration for index.html in submodules as well. --&gt;
         ...
       &lt;/index&gt;
-      &lt;usage-basic project=&quot;my-project&quot;&gt;
-        &lt;!-- usage/basic.html in &quot;my-project&quot; project only: submodules will not inherit --&gt;
+      &lt;usage-basic project="my-project"&gt;
+        &lt;!-- usage/basic.html in "my-project" project only: submodules will not inherit --&gt;
         ...
       &lt;/usage-basic&gt;
       ...
@@ -175,13 +175,13 @@
   <h3 id="Page_ID">Page ID</h3> 
   <p>Each page configuration is set within a <code>&lt;pages&gt;&lt;[pageId]&gt;</code> element.</p> 
   <p>The page ID is its file name without extension. This is because the pages may be generated from different file formats, e.g. <a class="externalLink" href="https://maven.apache.org/doxia/references/index.html">APT, XDoc, Markdown, etc</a>. The page ID characters must be of the same case as the generated file name.</p> 
-  <p>For generated files that are in directories, <code>&quot;-&quot;</code> is used as the separator for directory structure. So a file in <i>./subdir/foo.html</i> is referred as <code>&lt;subdir-foo&gt;</code> in the configuration.</p> 
+  <p>For generated files that are in directories, <code>"-"</code> is used as the separator for directory structure. So a file in <i>./subdir/foo.html</i> is referred as <code>&lt;subdir-foo&gt;</code> in the configuration.</p> 
  </section> 
  <section> 
   <h3 id="Configuration_inheritance">Configuration inheritance</h3> 
   <p>The page configuration is applied to all generated pages that have the indicated file name. For multi-module builds, child sites will inherit the configuration from parent site. So if the parent has defined a configuration for <code>&lt;index&gt;</code>, it will also be applied to <i>index.html</i> in the child project.</p> 
   <p>Sometimes this is undesirable, so one can use <code>project</code> attribute to indicate the project that the page applies to. For child pages, the project will be different from indicated and thus the configuration will not apply. The project is identified using its <code>artifactId</code>.</p> 
-  <p>If you still encounter inheritance problems, try using <a class="externalLink" href="https://www.sonatype.com/people/2011/01/maven-how-to-merging-plugin-configuration-in-complex-projects/"><code>combine.self=&quot;override&quot;</code> attribute</a> on the <code>site.xml</code> element to explicitly override it.</p> 
+  <p>If you still encounter inheritance problems, try using <a class="externalLink" href="https://www.sonatype.com/people/2011/01/maven-how-to-merging-plugin-configuration-in-complex-projects/"><code>combine.self="override"</code> attribute</a> on the <code>site.xml</code> element to explicitly override it.</p> 
  </section> 
 </section>
 			</div>
