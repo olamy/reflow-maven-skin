@@ -39,6 +39,13 @@ support per-page configurations and more!
 
 ---
 
+## News 
+
+The original unmaintained [project][original-github] has been forked [here][reflow-github].
+
+First steps were to make it work with recent version of `maven-site-plugin` and cut a release `2.0.0`.
+
+Next steps will be to update boostrap version etc..
 
 ## Get it now
 
@@ -152,4 +159,5 @@ be glad to [accept a small donation][donate].
 [apache-license]: https://www.apache.org/licenses/LICENSE-2.0
 [contribute]: contribute.html
 [reflow-github]: https://github.com/olamy/reflow-maven-skin/
-[donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=QWKNRFZH52828
+[donate]: https://paypal.me/oliverlamy
+[original-github]: https://github.com/andriusvelykis/reflow-maven-skin
