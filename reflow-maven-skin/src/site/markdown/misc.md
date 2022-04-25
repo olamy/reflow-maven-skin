@@ -2,6 +2,26 @@
 
 This page lists various other configuration options for Reflow Maven skin.
 
+## Github ribbon 
+
+To enable the `Fork me on GitHub` ribbon. You can use the following configuration (this is the current site configuration):
+
+```xml
+<project>
+  <custom>  
+    <gitHub combine.children="append">
+      <projectId>olamy/reflow-maven-skin</projectId>
+      <ribbonOrientation>right</ribbonOrientation>
+      <ribbonColor>gray</ribbonColor>
+    </gitHub>
+  </custom>
+</project>
+```
+
+`ribbonOrientation`: left|right (default `left`)
+
+`ribbonColor`: red|green|black|orange|gray (default `red`)
+
 ## JavaScript goodies
 
 ### Code highlight
