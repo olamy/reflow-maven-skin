@@ -18,8 +18,8 @@
   <inceptionYear>2012</inceptionYear>
   
   <modules>
-    <module>velocity-tools</module>
-    <module>skin</module>
+    <module>reflow-velocity-tools</module>
+    <module>reflow-maven-skin</module>
   </modules>
 
   <properties>
@@ -127,16 +127,8 @@
         <configuration>
           <pushChanges>true</pushChanges>
           <localCheckout>true</localCheckout>
-          <tagNameFormat>reflow-@{project.version}</tagNameFormat>
+          <tagNameFormat>reflow-skin-@{project.version}</tagNameFormat>
         </configuration>
-         <dependencies>
-            <dependency>
-               <groupId>org.apache.maven.scm</groupId>
-               <artifactId>maven-scm-provider-gitexe</artifactId>
-               <!-- This version is necessary for use with git version 1.8.5 -->
-               <version>1.12.2</version>
-            </dependency>
-         </dependencies>
       </plugin>
     </plugins>
 
