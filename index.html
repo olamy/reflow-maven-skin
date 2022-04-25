@@ -173,14 +173,18 @@
 			<h2 id="Get_it_now">Get it now</h2>
 <p>To use Reflow skin in your Maven site, <a href="skin/">add it to site.xml</a>:</p>
 <div class="source"> 
- <pre><code class="language-xml">&lt;skin&gt;
-  &lt;groupId&gt;io.github.olamy.maven.skins&lt;/groupId&gt;
-  &lt;artifactId&gt;reflow-maven-skin&lt;/artifactId&gt;
-  &lt;version&gt;2.0.0&lt;/version&gt;
-&lt;/skin&gt;
+ <pre><code class="language-xml">&lt;project&gt;
+  ...
+  &lt;skin&gt;
+    &lt;groupId&gt;io.github.olamy.maven.skins&lt;/groupId&gt;
+    &lt;artifactId&gt;reflow-maven-skin&lt;/artifactId&gt;
+    &lt;version&gt;2.0.0&lt;/version&gt;
+  &lt;/skin&gt;
+  ...
+&lt;/project&gt;
 </code></pre> 
 </div>
-<p>Furthermore, the skin requires accompanying <a href="velocity-tools/">Reflow Velocity tools</a> as a dependency as well as Apache Velocity 1.7. <a href="skin/">Add them as dependencies</a> to <code>maven-site-plugin</code>.</p>
+<p>Furthermore, the skin requires accompanying <a href="velocity-tools/">Reflow Velocity tools</a> as a dependency <a href="skin/">Add it as a dependency</a> to <code>maven-site-plugin</code>.</p>
 <p><a href="skin/">Full usage instructions »</a></p>
 <section>      
 </section>
