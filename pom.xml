@@ -26,7 +26,7 @@
     <site.deploy.url>scm:git:https://github.com/olamy/reflow-maven-skin.git</site.deploy.url>
     <site.deploy.id>github-site</site.deploy.id>
     <site.url>https://olamy.github.io/reflow-maven-skin/</site.url>
-    <sitePluginVersion>3.12.0</sitePluginVersion>
+    <sitePluginVersion>3.12.1</sitePluginVersion>
     <lastRelease>2.0.0</lastRelease>
   </properties>
 
